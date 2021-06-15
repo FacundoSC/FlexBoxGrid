@@ -48,3 +48,22 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width : 768px){
+    .contenedor-flexbox{
+        display: flex;
+        justify-content: space-between;
+    } /* seteamos  el contenido para que se vea usando flexbox */
+
+    .contenido-principal{
+         flex-basis: calc(60% - 1rem);
+    } /* le asignamos porcentajes a los  contenidos */
+
+    .sidebar{
+        flex-basis: calc(20% - 1rem);
+    }
+    .sidebar-1{
+        order:-1;
+    } /* esto es utilizado para ordenar el contenido */
+
+}
