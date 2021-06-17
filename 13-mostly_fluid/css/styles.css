@@ -37,3 +37,30 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+/***mostly fuild ( mayormente fluido)***/
+
+.contenedor{
+    max-width: 120rem;
+    width:95%;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+}
+
+@media(min-width :768px){
+    
+.contenedor{
+    width:80%;
+}
+
+}/*tablet*/
+
+@media(min-width :992px){
+    
+.contenedor{
+    width:60%;
+}
+
+}/*pc*/
