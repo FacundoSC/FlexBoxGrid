@@ -50,3 +50,17 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+/*** patron tiny tweaks (pequeños ajustes)  ***/
+
+h1{
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media (min-width : 768px){
+ h1{
+     text-align: left;
+     font-size: 6rem;
+ }
+}/* modifique el tamaño para  dispositivo mas pequeño */
