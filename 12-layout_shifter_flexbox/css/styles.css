@@ -48,3 +48,48 @@ p {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px){
+    .layout-shifter-flebox{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contenido-principal{
+      display: flex;
+      justify-content: space-between;
+    }
+    .entrada-blog{
+        flex-basis: calc(50% - 2rem);
+    }
+}
+
+/* una opcion 
+@media (min-width: 992px){
+    .layout-shifter-flebox{
+        flex-direction: row-reverse;
+    }
+    .contenido-principal{
+        margin-right: 2rem;
+    }
+}
+
+*/
+
+@media (min-width: 992px){
+    .layout-shifter-flebox{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contenido-principal{
+        flex: 0 0 calc(66% - 2rem);
+        flex-wrap: wrap;
+    }
+
+    .sidebar{
+        flex: 0 0 calc(33% - 2rem);
+        order: 2;
+    }
+
+    .entrada-blog{
+        flex-basis: 100%;
+    }
+}
