@@ -49,3 +49,40 @@ p {
 
 
 /** CODIGO AQUI **/
+
+/*** layout shifter (cambio de diseño)***/
+@media (min-width:768px){
+ .layout-shifter-grid{
+     display: grid;
+     grid-template-areas: "contenido"
+                          "inferior";
+ }
+ .sidebar{
+     grid-area:inferior;
+ }
+ .contenido-principal{
+     grid-area: contenido;
+     display: grid;
+     grid-template-areas: "entrada1" "entrada2";
+     grid-template-columns: repeat(2,1fr);
+     column-gap: 2rem;
+    }
+ 
+}/* area*/
+
+@media (min-width:992px){
+    .layout-shifter-grid{
+        grid-template-areas: "contenido sidebar";
+       column-gap: 2rem;
+    }
+    .contenido-principal{
+        display: grid;
+        grid-template-areas: "entrada1"
+                             "entrada2";
+        grid-template-columns: none;
+    }
+    .sidebar{
+        grid-area:sidebar;
+    }
+
+}
